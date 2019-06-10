@@ -1,0 +1,18 @@
+<form>
+  <div class="form-group">
+    <label>Movie name</label>
+    <input type="text" class="form-control" placeholder="Enter movie name" name="movieName" [(ngModel)]="movie.name" #movieName="ngModel">
+  </div>
+
+  <div class="form-group">
+    <label>Movie year</label>
+    <input type="text" class="form-control" placeholder="Enter movie year" name="movieYear" [(ngModel)]="movie.year" #movieYear="ngModel">
+  </div>
+
+  <div class="form-group">
+    <label>Rating</label>
+    <input type="text" class="form-control" placeholder="Enter movie rating" name="movieRating" [(ngModel)]="movie.rating" #movieRating="ngModel">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+</form>
